@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Install Dependencies
+      run: npm install
     - uses: actions/checkout@v2
     - name: configure
       run: ./configure
